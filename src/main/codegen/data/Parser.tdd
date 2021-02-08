@@ -1,0 +1,72 @@
+{
+    package: "com.calcite.example.parser.impl",
+    class: "IckSqlParserImpl",
+
+    imports: [
+        "org.apache.calcite.sql.SqlAlienSystemTypeNameSpec"
+        "org.apache.calcite.sql.SqlCreate"
+        "org.apache.calcite.sql.SqlDrop"
+        "org.apache.calcite.sql.SqlNode"
+        "com.calcite.example.parser.dql.SqlGetTables"
+        "org.apache.calcite.sql.SqlFlinkJob"
+        "java.util.List"
+        "java.util.ArrayList"
+    ]
+
+    keywords: [
+        "TABLES"
+        "JOB"
+        "FLINK"
+    ]
+
+    nonReservedKeywords: [
+        "GET"
+        "JAVA"
+        "JSON"
+        "TUMBLE"
+    ]
+
+    nonReservedKeywordsToAdd: [
+    ]
+
+    statementParserMethods: [
+        "SqlGetTables()"
+        "SqlFlinkJob()"
+    ]
+
+    literalParserMethods: [
+    ]
+
+    dataTypeParserMethods: [
+    ]
+
+    builtinFunctionCallMethods: [
+    ]
+
+    alterStatementParserMethods: [
+    ]
+
+    createStatementParserMethods: [
+    ]
+
+    dropStatementParserMethods: [
+    ]
+
+    binaryOperatorsTokens: [
+    ]
+
+    extraBinaryExpressions: [
+    ]
+
+    implementationFiles: [
+        "parserImpls.ftl"
+    ]
+
+    joinTypes: [
+    ]
+
+    includePosixOperators: false
+    includeCompoundIdentifier: true
+    includeBraces: true
+    includeAdditionalDeclarations: false
+}

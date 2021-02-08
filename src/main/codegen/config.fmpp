@@ -1,0 +1,7 @@
+data: {
+  parser: tdd(../data/Parser.tdd)
+}
+
+freemarkerLinks: {
+  includes: templates/
+}
